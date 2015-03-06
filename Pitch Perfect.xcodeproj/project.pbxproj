@@ -13,6 +13,8 @@
 		10E101171AA934E2008BFEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E101161AA934E2008BFEBF /* Images.xcassets */; };
 		10E1011A1AA934E2008BFEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E101181AA934E2008BFEBF /* LaunchScreen.xib */; };
 		10E101261AA934E2008BFEBF /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E101251AA934E2008BFEBF /* Pitch_PerfectTests.swift */; };
+		10E101301AA97703008BFEBF /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E1012F1AA97703008BFEBF /* PlaySoundsViewController.swift */; };
+		10E101321AA97E42008BFEBF /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10E101311AA97E42008BFEBF /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		10E1011F1AA934E2008BFEBF /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E101241AA934E2008BFEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E101251AA934E2008BFEBF /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
+		10E1012F1AA97703008BFEBF /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		10E101311AA97E42008BFEBF /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = IOS/movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				10E1010F1AA934E2008BFEBF /* AppDelegate.swift */,
 				10E101111AA934E2008BFEBF /* ViewController.swift */,
 				10E101131AA934E2008BFEBF /* Main.storyboard */,
+				10E101311AA97E42008BFEBF /* movie_quote.mp3 */,
+				10E1012F1AA97703008BFEBF /* PlaySoundsViewController.swift */,
 				10E101161AA934E2008BFEBF /* Images.xcassets */,
 				10E101181AA934E2008BFEBF /* LaunchScreen.xib */,
 				10E1010D1AA934E2008BFEBF /* Supporting Files */,
@@ -194,6 +200,7 @@
 			files = (
 				10E101151AA934E2008BFEBF /* Main.storyboard in Resources */,
 				10E1011A1AA934E2008BFEBF /* LaunchScreen.xib in Resources */,
+				10E101321AA97E42008BFEBF /* movie_quote.mp3 in Resources */,
 				10E101171AA934E2008BFEBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E101121AA934E2008BFEBF /* ViewController.swift in Sources */,
+				10E101301AA97703008BFEBF /* PlaySoundsViewController.swift in Sources */,
 				10E101101AA934E2008BFEBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
