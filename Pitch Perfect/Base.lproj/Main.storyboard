@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yoi-nH-eAZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -39,7 +40,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HiP-3H-obY"/>
-                                    <segue destination="dpo-vV-plZ" kind="show" id="MGd-N1-tds"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,14 +61,14 @@
                                 <exclude reference="LNZ-DR-HwT"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Wi1-Hy-iUh"/>
-                                <exclude reference="ivb-oW-BPY"/>
-                                <exclude reference="x17-6K-5sk"/>
                                 <exclude reference="IG6-Ic-HXp"/>
                                 <exclude reference="Z5F-oJ-HZf"/>
                                 <exclude reference="1Iw-Pm-aHK"/>
                                 <exclude reference="5sW-gk-xBs"/>
                                 <exclude reference="Ldy-dG-K8L"/>
+                                <exclude reference="Wi1-Hy-iUh"/>
+                                <exclude reference="ivb-oW-BPY"/>
+                                <exclude reference="x17-6K-5sk"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -78,14 +78,14 @@
                                 <include reference="LNZ-DR-HwT"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Wi1-Hy-iUh"/>
-                                <include reference="ivb-oW-BPY"/>
-                                <include reference="x17-6K-5sk"/>
                                 <include reference="IG6-Ic-HXp"/>
                                 <include reference="Z5F-oJ-HZf"/>
                                 <include reference="1Iw-Pm-aHK"/>
                                 <include reference="5sW-gk-xBs"/>
                                 <include reference="Ldy-dG-K8L"/>
+                                <include reference="Wi1-Hy-iUh"/>
+                                <include reference="ivb-oW-BPY"/>
+                                <include reference="x17-6K-5sk"/>
                             </mask>
                         </variation>
                     </view>
@@ -94,6 +94,7 @@
                         <outlet property="recordButton" destination="iuY-e6-3qN" id="aB6-kk-vZH"/>
                         <outlet property="recordingInProgress" destination="097-W0-0b4" id="SkJ-y7-Gl0"/>
                         <outlet property="stopButton" destination="LNZ-DR-HwT" id="Job-Hp-TOi"/>
+                        <segue destination="dpo-vV-plZ" kind="show" identifier="stopRecording" id="0fV-8Q-dvD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -109,6 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Akb-I6-Wc3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MeC-U6-vsa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMt-bg-aqb">
@@ -163,11 +165,11 @@
                                 <exclude reference="rZ1-Ay-2Yd"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2yL-Pl-yej"/>
-                                <exclude reference="UWK-Hh-ElO"/>
                                 <exclude reference="HWL-Rg-iUN"/>
                                 <exclude reference="eMK-Yg-4TU"/>
                                 <exclude reference="yO6-Hp-zoX"/>
+                                <exclude reference="2yL-Pl-yej"/>
+                                <exclude reference="UWK-Hh-ElO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -177,11 +179,11 @@
                                 <include reference="rZ1-Ay-2Yd"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2yL-Pl-yej"/>
-                                <include reference="UWK-Hh-ElO"/>
                                 <include reference="HWL-Rg-iUN"/>
                                 <include reference="eMK-Yg-4TU"/>
                                 <include reference="yO6-Hp-zoX"/>
+                                <include reference="2yL-Pl-yej"/>
+                                <include reference="UWK-Hh-ElO"/>
                             </mask>
                         </variation>
                     </view>
